@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: WastelandOutpost.ma
-//Last modified: Fri, Apr 04, 2025 02:37:50 PM
+//Last modified: Fri, Apr 04, 2025 10:33:40 PM
 //Codeset: UTF-8
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 15.3.2";
-fileInfo "UUID" "CEA864DB-0A4A-917D-BF97-F1B59BFCAB86";
+fileInfo "UUID" "8B4E9F04-8B4A-84E5-FF79-2EA1485171D0";
 createNode transform -s -n "persp";
 	rename -uid "9E76BDCD-9948-EA00-D75D-049E58042F81";
 	setAttr ".v" no;
@@ -18441,7 +18441,7 @@ createNode mesh -n "TelephonePoleShape" -p "TelephonePole";
 createNode transform -n "areaLight1";
 	rename -uid "D353717C-0349-64B2-7068-BB88DAA77B97";
 	setAttr ".t" -type "double3" -1.0848943720823434 1.7751590055134276 -0.24296338536027484 ;
-	setAttr ".r" -type "double3" 159.46069068804692 -56.224082566622158 180 ;
+	setAttr ".r" -type "double3" 159.46069068804692 -56.224082566622165 180 ;
 	setAttr ".s" -type "double3" 1.0000000000000002 0.99999999999999989 1.0000000000000002 ;
 	setAttr ".rp" -type "double3" -2.2204460492503136e-16 2.2204460492503126e-16 -2.2204460492503136e-16 ;
 	setAttr ".rpt" -type "double3" 5.8307985718700418e-16 -9.2019331785318828e-17 1.9638540193630456e-16 ;
@@ -18491,15 +18491,15 @@ createNode mesh -n "BackgroundShape" -p "Background";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "8664C534-794F-5D42-3097-89B49AFF4411";
+	rename -uid "C11E9D2B-8141-B6F3-B10A-949B5A579214";
 	setAttr -s 10 ".lnk";
 	setAttr -s 10 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "00FFDDD5-4448-E396-7DB2-E8BFB7A5F576";
+	rename -uid "DAD3149E-E541-1733-A1C1-43885859F426";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "ADE26E0E-9F4F-C7A0-7C0F-2DA37D1E4847";
+	rename -uid "6E1B01BD-F74E-A18C-74F3-649F077DB9D2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "FEEE0520-FA47-07C2-AC57-9A8D057A9D70";
+	rename -uid "F8568A61-4846-65E0-A17F-94BD80B2764D";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 4 ".dli";
@@ -18507,7 +18507,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "1C75055B-7C46-3851-8A7C-F295819EDAB2";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C5BE4C97-EA48-67D0-A3CE-9A9B2D721544";
+	rename -uid "3C46CE38-8E40-FD31-48AE-82A353AB7BE6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D7282D73-9F41-FDFD-5C34-E8A19C3D90CD";
 	setAttr ".g" yes;
@@ -18761,7 +18761,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[14].y" -2068.571533203125;
 	setAttr ".tgi[0].ni[14].nvs" 1923;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "504416F9-9D42-BE00-C441-B3A00F85859E";
+	rename -uid "B744A040-0E40-488F-5574-52A0DBA75039";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
